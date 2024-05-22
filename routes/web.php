@@ -13,12 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::get('home', function () {
-    return 'Ini halaman home';
+    return view('home');
 });
 Route::get('about', function () {
-    return 'Ini halaman about';
+    return view('about', [
+        "nama" => "Putra Muhammad Ferdiansyah",
+        "email" => "putramei05@gmail.com",
+        "alamat" => "Jalan Kampung Rawa Tengah rt 03 / rw 07 no 9 kelurahan galur",
+        "image" => "img/foto.jpg"
+    ]);
 });
-Route::get('login', function () {
-    return 'Ini halaman login';
+Route::get('post', function () {
+    return view('post');
 });
