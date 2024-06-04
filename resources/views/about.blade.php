@@ -5,7 +5,7 @@
     <h3>{{ $nama }}</h3>
     <p>{{ $email }}</p>
     <p>{{ $alamat }}</p>
-    <img src="{{ $image }}" alt="{{$nama}}" width="200">
+    <img src="{{ $image }}" alt="{{$nama}}" width="200" class="img-thumbnail rounded-circle">
 
     <!-- file javascript bisa diakses -->
     <!-- <script src="js/script.js"></script> -->
